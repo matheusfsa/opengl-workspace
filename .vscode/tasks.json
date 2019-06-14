@@ -1,0 +1,24 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "g++ build active file",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-g",
+                "-o",
+                
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "${file}",
+                "-lGL",
+                "-lGLU",
+                 "-lglut",
+                 "-lGLEW"
+            ],
+            "options": {
+                "cwd": "/usr/bin"
+            }
+        }
+    ],
+    "version": "2.0.0"
+}
